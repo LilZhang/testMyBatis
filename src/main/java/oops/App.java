@@ -32,6 +32,23 @@ public class App
         map.put("password", "123");
         List<User> users2 = userMapper.findByNameAndPassword(map);
 
-        System.out.println("o");
+//        System.out.println("o");
+
+        User user1 = new User();
+        user1.setUsername("add1");
+        user1.setEmail("add1@111.com");
+        user1.setPassword("456");
+
+        userMapper.insertUser1(user1);
+        sqlSession.commit();    // necessary
+
+        User user2 = new User();
+        user2.setUsername("add2");
+        user2.setEmail("add2@111.com");
+        user2.setPassword("456");
+
+        userMapper.insertUser2(user2);
+        sqlSession.commit();    // necessary
+
     }
 }

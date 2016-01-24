@@ -27,4 +27,20 @@
         WHERE name = #{name}
         AND password = #{password}
     </select>
+
+    <insert id="insertUser1" parameterType="oops.bean.User" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `blog_db`.`user` ( `name`, `email`, `password`)
+        VALUES (#{username}, #{email}, #{password})
+    </insert>
+
+    <parameterMap id="insertUser2ParamsMap" type="oops.bean.User">
+        <parameter property="username"/>
+        <parameter property="email"/>
+        <parameter property="password"/>
+    </parameterMap>
+
+    <insert id="insertUser2" parameterType="oops.bean.User" parameterMap="insertUser2ParamsMap" useGeneratedKeys="true" keyProperty="id">
+        INSERT INTO `blog_db`.`user` ( `name`, `email`, `password`)
+         VALUES (?, ?, ?)
+    </insert>
 </mapper>

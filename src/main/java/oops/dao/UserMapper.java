@@ -15,4 +15,8 @@ public interface UserMapper {
     List<User> findByPassword(String password);
 
     List<User> findByNameAndPassword(Map<String, String> userInfo);
+
+    void insertUser1(User user);
+
+    void insertUser2(User user);
 }
