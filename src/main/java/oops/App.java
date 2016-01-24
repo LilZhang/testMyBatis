@@ -8,6 +8,7 @@ import org.apache.ibatis.session.SqlSessionFactory;
 import org.apache.ibatis.session.SqlSessionFactoryBuilder;
 
 import java.io.IOException;
+import java.util.HashMap;
 import java.util.List;
 
 /**
@@ -25,6 +26,12 @@ public class App
         User user = userMapper.findById(2);
 
         List<User> users = userMapper.findByPassword("123");
+
+        HashMap<String, String> map = new HashMap<String, String>();
+        map.put("name", "letian");
+        map.put("password", "123");
+        List<User> users2 = userMapper.findByNameAndPassword(map);
+
         System.out.println("o");
     }
 }

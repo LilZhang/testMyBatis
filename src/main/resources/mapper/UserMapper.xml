@@ -10,13 +10,21 @@
     </resultMap>
     
     <select id="findById" parameterType="Integer" resultType="oops.bean.User" resultMap="userResult">
-        select
-        * from blog_db.user where id=#{id}
+        SELECT *
+        FROM blog_db.user
+        WHERE id=#{id}
     </select>
 
     <select id="findByPassword" parameterType="String" resultType="oops.bean.User" resultMap="userResult">
         SELECT *
         FROM blog_db.user
         WHERE password = #{password}
+    </select>
+
+    <select id="findByNameAndPassword" parameterType="HashMap" resultType="oops.bean.User" resultMap="userResult">
+        SELECT id, name, email
+        FROM blog_db.user
+        WHERE name = #{name}
+        AND password = #{password}
     </select>
 </mapper>
