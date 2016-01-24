@@ -27,8 +27,8 @@
       <file leaf-file-name="App.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/oops/App.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.7618148">
-              <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+            <state vertical-scroll-proportion="0.71455574">
+              <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -39,11 +39,11 @@
       <file leaf-file-name="UserMapper.xml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-12.666667">
-              <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+            <state vertical-scroll-proportion="-10.666667">
+              <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
               <folding>
-                <marker date="1453646318836" expanded="true" signature="593:642" placeholder="select * fro..user..." />
-                <marker date="1453646318836" expanded="true" signature="774:845" placeholder="SELECT * FRO..user..." />
+                <marker date="1453648359401" expanded="true" signature="593:642" placeholder="select * fro..user..." />
+                <marker date="1453648359401" expanded="true" signature="773:844" placeholder="SELECT * FRO..user..." />
               </folding>
             </state>
           </provider>
@@ -124,10 +124,10 @@
         <option value="$PROJECT_DIR$/src/main/java/oops/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/oops/mapper/UserMapper.xml" />
         <option value="$PROJECT_DIR$/src/main/java/oops/dao/UserMapper.java" />
-        <option value="$PROJECT_DIR$/src/main/java/oops/App.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mybatis-config.xml" />
         <option value="$PROJECT_DIR$/src/main/java/oops/bean/User.java" />
         <option value="$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/oops/App.java" />
       </list>
     </option>
   </component>
@@ -825,12 +825,12 @@
       <updated>1453389062080</updated>
       <workItem from="1453389067748" duration="2436000" />
       <workItem from="1453523620207" duration="205000" />
-      <workItem from="1453630682892" duration="11435000" />
+      <workItem from="1453630682892" duration="12403000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="14076000" />
+    <option name="totallyTimeSpent" value="15044000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="876" extended-state="6" />
@@ -994,19 +994,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/resources/mapper/UserMapper.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.666667">
-          <caret line="19" column="36" selection-start-line="19" selection-start-column="36" selection-end-line="19" selection-end-column="36" />
+        <state vertical-scroll-proportion="-10.666667">
+          <caret line="16" column="53" selection-start-line="16" selection-start-column="53" selection-end-line="16" selection-end-column="53" />
           <folding>
-            <marker date="1453646318836" expanded="true" signature="593:642" placeholder="select * fro..user..." />
-            <marker date="1453646318836" expanded="true" signature="774:845" placeholder="SELECT * FRO..user..." />
+            <marker date="1453648359401" expanded="true" signature="593:642" placeholder="select * fro..user..." />
+            <marker date="1453648359401" expanded="true" signature="773:844" placeholder="SELECT * FRO..user..." />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/oops/App.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7618148">
-          <caret line="29" column="1" selection-start-line="29" selection-start-column="1" selection-end-line="29" selection-end-column="1" />
+        <state vertical-scroll-proportion="0.71455574">
+          <caret line="27" column="32" selection-start-line="27" selection-start-column="32" selection-end-line="27" selection-end-column="32" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

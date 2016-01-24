@@ -22,9 +22,9 @@ public class App
         SqlSession sqlSession = sessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
 
-//        User user = userMapper.findById(2);
+        User user = userMapper.findById(2);
 
         List<User> users = userMapper.findByPassword("123");
-        System.out.println(users.size());
+        System.out.println("o");
     }
 }

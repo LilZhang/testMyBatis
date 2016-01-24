@@ -9,12 +9,12 @@
         <result property="username" column="name" javaType="String" jdbcType="VARCHAR"/>
     </resultMap>
     
-    <select id="findById" parameterType="HashMap" resultType="oops.bean.User" resultMap="userResult">
+    <select id="findById" parameterType="Integer" resultType="oops.bean.User" resultMap="userResult">
         select
         * from blog_db.user where id=#{id}
     </select>
 
-    <select id="findByPassword" parameterType="HashMap" resultType="oops.bean.User" resultMap="userResult">
+    <select id="findByPassword" parameterType="String" resultType="oops.bean.User" resultMap="userResult">
         SELECT *
         FROM blog_db.user
         WHERE password = #{password}
