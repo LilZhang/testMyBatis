@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!DOCTYPE mapper PUBLIC
+        "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<!--这块等于dao接口的实现  namespace必须和接口的类路径一样-->
+<mapper namespace="oops.dao.UserMapper">
+    <!-- findById必须和接口中的方法名一样  返回一个User  就是刚才的别名  如果不弄别名要连类路径一起写 麻烦-->
+    <resultMap id="userResult" type="oops.bean.User">
+        <result property="username" column="name" javaType="String" jdbcType="VARCHAR"/>
+    </resultMap>
+    
+    <select id="findById" parameterType="HashMap" resultType="oops.bean.User" resultMap="userResult">
+        select
+        * from blog_db.user where id=#{id}
+    </select>
+
+    <select id="findByPassword" parameterType="HashMap" resultType="oops.bean.User" resultMap="userResult">
+        SELECT *
+        FROM blog_db.user
+        WHERE password = #{password}
+    </select>
+</mapper>
