@@ -19,4 +19,10 @@ public interface UserMapper {
     void insertUser1(User user);
 
     void insertUser2(User user);
+
+    void updateUserPassword(User user);
+
+    void delete(User user);
+
+    void deleteByGreaterThanId(int id);
 }

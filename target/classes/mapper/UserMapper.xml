@@ -43,4 +43,23 @@
         INSERT INTO `blog_db`.`user` ( `name`, `email`, `password`)
          VALUES (?, ?, ?)
     </insert>
+
+    <update id="updateUserPassword" parameterType="oops.bean.User">
+        UPDATE blog_db.user
+        SET password = #{password}
+        WHERE id = #{id}
+    </update>
+
+    <delete id="delete" parameterType="oops.bean.User">
+        DELETE FROM blog_db.user
+        WHERE id = #{id}
+    </delete>
+
+    <delete id="deleteByGreaterThanId" parameterType="Integer">
+        <![CDATA[
+        DELETE FROM blog_db.user
+        WHERE id > #{id}
+        ]]>
+
+    </delete>
 </mapper>
