@@ -1,5 +1,7 @@
 package oops.bean;
 
+import java.util.List;
+
 /**
  * Created by Administrator on 2016/1/24.
  */
@@ -9,6 +11,8 @@ public class User {
     private String password;
 
     private String username;
+
+    private List<Blog> blogs;
 
     public int getId() {
         return id;
@@ -40,5 +44,13 @@ public class User {
 
     public void setUsername(String username) {
         this.username = username;
+    }
+
+    public List<Blog> getBlogs() {
+        return blogs;
+    }
+
+    public void setBlogs(List<Blog> blogs) {
+        this.blogs = blogs;
     }
 }

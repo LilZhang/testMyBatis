@@ -57,9 +57,9 @@ public class App
 //        userMapper.updateUserPassword(user);
 
         User user = userMapper.findById(2);
-        userMapper.delete(user);
-
-        userMapper.deleteByGreaterThanId(3);
+//        userMapper.delete(user);
+//
+//        userMapper.deleteByGreaterThanId(3);
 
         sqlSession.commit();
 
