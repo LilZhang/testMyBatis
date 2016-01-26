@@ -1,6 +1,8 @@
 package oops;
 
+import oops.bean.Blog;
 import oops.bean.User;
+import oops.dao.BlogMapper;
 import oops.dao.UserMapper;
 import org.apache.ibatis.io.Resources;
 import org.apache.ibatis.session.SqlSession;
@@ -22,7 +24,7 @@ public class App
         SqlSessionFactory sessionFactory = new SqlSessionFactoryBuilder().build(Resources.getResourceAsReader("mybatis-config.xml"));
         SqlSession sqlSession = sessionFactory.openSession();
         UserMapper userMapper = sqlSession.getMapper(UserMapper.class);
-
+        BlogMapper blogMapper = sqlSession.getMapper(BlogMapper.class);
 //        User user = userMapper.findById(2);
 //
 //        List<User> users = userMapper.findByPassword("123");
@@ -56,10 +58,12 @@ public class App
 //
 //        userMapper.updateUserPassword(user);
 
-        User user = userMapper.findById(2);
+//        User user = userMapper.findById(2);
 //        userMapper.delete(user);
 //
 //        userMapper.deleteByGreaterThanId(3);
+
+        Blog blog = blogMapper.findById(2);
 
         sqlSession.commit();
 
