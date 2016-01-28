@@ -65,6 +65,13 @@ public class App
 
         Blog blog = blogMapper.findById(2);
 
+        List<Blog> blogs = blogMapper.findAll();
+
+        HashMap<String, Integer> offsetLimit = new HashMap<String, Integer>();
+        offsetLimit.put("offset", 0);
+        offsetLimit.put("limit", 3);
+        List<Blog> blogs2 = blogMapper.findAll2(offsetLimit);
+
         sqlSession.commit();
 
         sqlSession.close();
